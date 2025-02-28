@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject targetIndicatorPrefab; // Assign this prefab in the Inspector
     private GameObject currentTargetIndicator; // The current target's GameObject instance
 
+    // Store the target position
+    public Vector3 currentTargetPosition { get; private set; }
+
     void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -42,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public void SetTarget(Vector3 target)
     {
         target.z = 0; // Ensure z is 0 for 2D games
+        currentTargetPosition = target; // Store the target position
 
         // Destroy any existing target indicator
         if (currentTargetIndicator != null)
@@ -59,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.LogWarning("TargetIndicatorPrefab is not assigned in PlayerMovement script on " + gameObject.name);
         }
 
-        // Store the target position and start pathfinding
+        // Start pathfinding to the target position
         seeker.StartPath(transform.position, target, OnPathComplete);
     }
 
@@ -89,37 +93,37 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     void FollowPath()
     {
-        if (path == null) return;
+        if (path == null || currentWaypoint >= path.vectorPath.Count)
+        {
+            // Reached the end of the path
+            isMoving = false;
+            if (animator != null)
+            {
+                animator.SetBool("isMoving", false);
+            }
+            // Clean up target indicator if present
+            if (currentTargetIndicator != null)
+            {
+                Destroy(currentTargetIndicator);
+                currentTargetIndicator = null;
+            }
+            return;
+        }
 
         // Current waypoint position
         Vector3 waypoint = path.vectorPath[currentWaypoint];
+        waypoint.z = 0; // Ensure z is 0
+
         Vector3 direction = (waypoint - transform.position).normalized;
         float distanceThisFrame = moveSpeed * Time.deltaTime;
 
         // Prevent overshooting by clamping movement
-        if (Vector3.Distance(transform.position, waypoint) <= distanceThisFrame)
+        float distanceToWaypoint = Vector3.Distance(transform.position, waypoint);
+        if (distanceToWaypoint <= distanceThisFrame)
         {
             // Snap to the waypoint if close enough
             transform.position = waypoint;
             currentWaypoint++;
-
-            if (currentWaypoint >= path.vectorPath.Count)
-            {
-                // Reached the end of the path
-                isMoving = false;
-                path = null;
-                if (animator != null)
-                {
-                    animator.SetBool("isMoving", false);
-                }
-                // Clean up target indicator if present
-                if (currentTargetIndicator != null)
-                {
-                    Destroy(currentTargetIndicator);
-                    currentTargetIndicator = null;
-                }
-                return;
-            }
         }
         else
         {

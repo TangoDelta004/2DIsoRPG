@@ -775,7 +775,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  spacing: 2
+  formationSpacing: 1
 --- !u!114 &533628549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,7 +802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  nextWaypointDistance: 0.1
   playerSprite: {fileID: 1063270443}
   targetIndicatorPrefab: {fileID: 8879970508674733752, guid: f10582dedddf17844beb6a4e582bc849, type: 3}
 --- !u!114 &533628551
@@ -1081,7 +1080,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  spacing: 2
+  formationSpacing: 1
 --- !u!114 &781402821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,7 +1107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  nextWaypointDistance: 0.1
   playerSprite: {fileID: 1711678809}
   targetIndicatorPrefab: {fileID: 8879970508674733752, guid: f10582dedddf17844beb6a4e582bc849, type: 3}
 --- !u!114 &781402823
@@ -1780,7 +1778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  nextWaypointDistance: 0.1
   playerSprite: {fileID: 1878139295}
   targetIndicatorPrefab: {fileID: 8879970508674733752, guid: f10582dedddf17844beb6a4e582bc849, type: 3}
 --- !u!114 &1083716897
@@ -1813,7 +1810,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  spacing: 2
+  formationSpacing: 0.3
 --- !u!58 &1083716899
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1977,7 +1974,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
-  spacing: 2
+  formationSpacing: 1
 --- !u!114 &1197131549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2004,7 +2001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  nextWaypointDistance: 0.1
   playerSprite: {fileID: 1549965287}
   targetIndicatorPrefab: {fileID: 8879970508674733752, guid: f10582dedddf17844beb6a4e582bc849, type: 3}
 --- !u!114 &1197131551
