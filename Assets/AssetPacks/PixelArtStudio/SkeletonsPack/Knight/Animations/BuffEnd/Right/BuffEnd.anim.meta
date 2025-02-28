@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3096dd7ec4520c449b6450e027ad717d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/BuffEnd/Right/BuffEnd.anim
+  uploadId: 583703

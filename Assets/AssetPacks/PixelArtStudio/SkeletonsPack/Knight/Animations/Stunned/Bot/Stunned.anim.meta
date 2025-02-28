@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4e2a5021ece6104ba38115ee582eadd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Stunned/Bot/Stunned.anim
+  uploadId: 583703

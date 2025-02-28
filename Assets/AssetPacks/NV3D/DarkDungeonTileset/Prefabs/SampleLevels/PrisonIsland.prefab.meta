@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 097ac4fc625265e48b456bd056efaded
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/SampleLevels/PrisonIsland.prefab
+  uploadId: 697658

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2048378659454a47b18835b24b2c7a2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/JumpStart/LeftTop/JumpStart.anim
+  uploadId: 583703

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c1f33950d1685304c8cb42153557b402
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/JumpEnd/LeftTop/JumpEnd.anim
+  uploadId: 583703

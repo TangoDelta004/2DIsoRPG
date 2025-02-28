@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 723f0241c2cb176488d6c7f658b6d2b6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/Bridge_Start.prefab
+  uploadId: 697658

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd6f03362b91c4242bf26a44c21ec840
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Attack2/Left/Attack2.anim
+  uploadId: 583703

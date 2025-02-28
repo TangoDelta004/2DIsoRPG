@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7ad39333b567c99499026ba78aa92d1f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/BuffLoop/LeftTop/BuffLoop.anim
+  uploadId: 583703

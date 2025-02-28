@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 43c6366d460902e4bb5fcd5942da31f2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/EmptyTile6.prefab
+  uploadId: 697658

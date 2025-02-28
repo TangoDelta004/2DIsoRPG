@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cf10965c0dbb34c43b7eb61969defe1e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Debris/WallPiece5.prefab
+  uploadId: 697658

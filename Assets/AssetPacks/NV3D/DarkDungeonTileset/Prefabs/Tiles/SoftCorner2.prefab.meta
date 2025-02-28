@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2caa9617b973b694cb93904b368d09e2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/SoftCorner2.prefab
+  uploadId: 697658

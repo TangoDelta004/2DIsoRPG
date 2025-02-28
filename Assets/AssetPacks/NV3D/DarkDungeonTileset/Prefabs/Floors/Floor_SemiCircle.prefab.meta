@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3e502451226680249b646b95de234bfb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Floors/Floor_SemiCircle.prefab
+  uploadId: 697658

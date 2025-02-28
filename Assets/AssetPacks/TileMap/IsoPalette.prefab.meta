@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d5a3060b7dc15ac419f6d7ea336de188
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228686
+  packageName: Isometric Dungeon Map
+  packageVersion: 1.0
+  assetPath: Assets/TileMap/IsoPalette.prefab
+  uploadId: 516026

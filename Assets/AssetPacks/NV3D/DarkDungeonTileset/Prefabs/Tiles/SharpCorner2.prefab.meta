@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb5b3bdb1be88ab46925a60a890c206c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/SharpCorner2.prefab
+  uploadId: 697658

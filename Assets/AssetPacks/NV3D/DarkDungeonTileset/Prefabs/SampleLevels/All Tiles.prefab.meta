@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 86afc8b45c0c9fe438c619d98df7a6f0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/SampleLevels/All Tiles.prefab
+  uploadId: 697658

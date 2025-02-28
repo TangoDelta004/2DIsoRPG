@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8f3f0371205c72141a73b0aab9e8d9e3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Idle/LeftBot/Idle.anim
+  uploadId: 583703

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ce8e32ddfd9ad5442b31c2a3d32e31fe
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Walk2/Top/Walk2.anim
+  uploadId: 583703

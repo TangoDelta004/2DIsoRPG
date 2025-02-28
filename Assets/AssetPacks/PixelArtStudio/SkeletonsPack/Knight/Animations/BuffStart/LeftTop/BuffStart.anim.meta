@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f826adc3f3b964a4c91ee0ae71ac3cb3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/BuffStart/LeftTop/BuffStart.anim
+  uploadId: 583703

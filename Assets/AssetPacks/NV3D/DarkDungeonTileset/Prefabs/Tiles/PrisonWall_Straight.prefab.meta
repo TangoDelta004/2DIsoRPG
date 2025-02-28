@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 354d68d28384c7b4fa0e788b9b59c40e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/PrisonWall_Straight.prefab
+  uploadId: 697658

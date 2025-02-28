@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 22dccc64857a7724bbbc1eed481b0b3b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Floors/FloorTileSet_Long.prefab
+  uploadId: 697658

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cecb5ddc91dce11459a7f0a3b22c66ca
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Floors/Floor_Slab_lrg.prefab
+  uploadId: 697658

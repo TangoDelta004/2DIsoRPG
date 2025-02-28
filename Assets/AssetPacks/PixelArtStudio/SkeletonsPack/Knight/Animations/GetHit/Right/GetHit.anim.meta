@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3d9271f200494e340bf74ffbcc2c24e8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/GetHit/Right/GetHit.anim
+  uploadId: 583703

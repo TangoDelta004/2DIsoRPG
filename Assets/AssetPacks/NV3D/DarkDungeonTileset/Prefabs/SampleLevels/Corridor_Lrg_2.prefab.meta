@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b04ca6a92bf05c043984b3fc6caff2fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/SampleLevels/Corridor_Lrg_2.prefab
+  uploadId: 697658

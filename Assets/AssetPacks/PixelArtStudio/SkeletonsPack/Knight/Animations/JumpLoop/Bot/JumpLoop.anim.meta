@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: afafe0b4531805e469d1ba1bacc70f35
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/JumpLoop/Bot/JumpLoop.anim
+  uploadId: 583703

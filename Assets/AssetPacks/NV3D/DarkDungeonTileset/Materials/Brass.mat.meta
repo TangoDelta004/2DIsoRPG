@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1a88bb3d4b0351940b5c2e41fd994fd7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Materials/Brass.mat
+  uploadId: 697658

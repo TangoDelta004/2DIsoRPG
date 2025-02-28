@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5c286fe3284a9474499084320f7d3f38
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/Arch_Broken.prefab
+  uploadId: 697658

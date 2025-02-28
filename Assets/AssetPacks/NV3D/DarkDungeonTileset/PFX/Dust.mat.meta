@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e1ae852b50fc20a499cd8276aec84d43
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/PFX/Dust.mat
+  uploadId: 697658

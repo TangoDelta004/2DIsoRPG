@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f5b51361e725d8942a19eab9f80c3fc6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Materials/BookCover1.mat
+  uploadId: 697658

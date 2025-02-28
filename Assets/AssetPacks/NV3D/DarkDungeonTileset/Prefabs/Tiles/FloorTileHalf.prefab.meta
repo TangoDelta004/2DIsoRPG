@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d781d4dbb6d44974182ba873fd042c20
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/FloorTileHalf.prefab
+  uploadId: 697658

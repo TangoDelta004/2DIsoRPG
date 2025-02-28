@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d9783b21a5ab6474e94dd3600331b256
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/SampleLevels/Bridge.prefab
+  uploadId: 697658

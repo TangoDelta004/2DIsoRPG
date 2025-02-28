@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2854c4c29d612d4d8dc98b425145959
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Knockdown/Top/Knockdown.anim
+  uploadId: 583703

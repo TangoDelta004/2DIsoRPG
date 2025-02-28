@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1223293c046413446b54618b2fe1a7d6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228686
+  packageName: Isometric Dungeon Map
+  packageVersion: 1.0
+  assetPath: Assets/TileMap/Tile/Title 12.asset
+  uploadId: 516026

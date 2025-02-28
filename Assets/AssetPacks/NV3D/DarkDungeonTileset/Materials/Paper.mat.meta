@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0e43215d0c3011a4fa924799872939e1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Materials/Paper.mat
+  uploadId: 697658

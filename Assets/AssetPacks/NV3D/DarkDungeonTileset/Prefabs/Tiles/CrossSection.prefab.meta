@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e508141515d76c34498c61328bdba2fe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/CrossSection.prefab
+  uploadId: 697658

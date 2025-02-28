@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5a1338481f8a3b241853fff005539862
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/EmptyPitGrate.prefab
+  uploadId: 697658

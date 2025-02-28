@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 07d135e6bb538fc4798ae43408dac88a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Floors/Flor_Slab_md.prefab
+  uploadId: 697658

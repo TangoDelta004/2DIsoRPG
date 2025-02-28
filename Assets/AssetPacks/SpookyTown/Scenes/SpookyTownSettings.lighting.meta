@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9f076034270b08944a9d368f560a0099
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 100666
+  packageName: Spooky Town 2D Isometric Assets
+  packageVersion: 2.3
+  assetPath: Assets/SpookyTown/Scenes/SpookyTownSettings.lighting
+  uploadId: 422645

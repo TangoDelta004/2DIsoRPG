@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc3ff1450c695274386a55b24a9baa60
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/PrisonWall_CrossSection.prefab
+  uploadId: 697658

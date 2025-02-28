@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e65ecaea130f6f94999d8eb851072400
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Run/LeftTop/Run.anim
+  uploadId: 583703

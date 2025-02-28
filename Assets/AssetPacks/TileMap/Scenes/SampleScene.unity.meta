@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10e14897fe545044a815d4950ee92342
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 228686
+  packageName: Isometric Dungeon Map
+  packageVersion: 1.0
+  assetPath: Assets/TileMap/Scenes/SampleScene.unity
+  uploadId: 516026

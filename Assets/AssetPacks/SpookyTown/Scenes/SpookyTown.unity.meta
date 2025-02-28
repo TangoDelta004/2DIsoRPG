@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 12429425c5ae69b48b22bdadf64c1a29
+timeCreated: 1515428552
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 100666
+  packageName: Spooky Town 2D Isometric Assets
+  packageVersion: 2.3
+  assetPath: Assets/SpookyTown/Scenes/SpookyTown.unity
+  uploadId: 422645

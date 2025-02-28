@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a1cced5f6755c4c45bdb15b9e06964df
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/WallSmall1.prefab
+  uploadId: 697658

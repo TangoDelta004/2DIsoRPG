@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6ce248d436541b645944f0ee74d6a4af
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/CliffEdge_Straight.prefab
+  uploadId: 697658

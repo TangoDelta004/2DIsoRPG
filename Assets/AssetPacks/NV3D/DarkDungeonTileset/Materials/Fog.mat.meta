@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fb77d4b1397a334b9e2e766c5f21f65
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Materials/Fog.mat
+  uploadId: 697658

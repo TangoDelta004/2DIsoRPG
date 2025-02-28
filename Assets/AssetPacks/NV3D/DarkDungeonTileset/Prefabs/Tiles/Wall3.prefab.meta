@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2739c5658080d4a439eca7817ff68f89
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/Wall3.prefab
+  uploadId: 697658

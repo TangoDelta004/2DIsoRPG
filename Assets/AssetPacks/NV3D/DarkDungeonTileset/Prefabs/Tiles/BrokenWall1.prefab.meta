@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b26a67702bee8f340bc9639d4e4c6ae6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165637
+  packageName: Dark Dungeon Tile Set
+  packageVersion: 1.2
+  assetPath: Assets/NV3D/DarkDungeonTileset/Prefabs/Tiles/BrokenWall1.prefab
+  uploadId: 697658

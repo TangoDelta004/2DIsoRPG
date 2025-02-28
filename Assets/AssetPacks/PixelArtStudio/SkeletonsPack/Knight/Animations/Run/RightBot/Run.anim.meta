@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f7b67d1cca5fe8a4fab6b0fa33194cd8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Run/RightBot/Run.anim
+  uploadId: 583703

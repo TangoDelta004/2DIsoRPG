@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5fe8d8c1280e4ca458ae0da8824e5c43
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254590
+  packageName: Isometric PixelArt - Skeleton Knight
+  packageVersion: 1.0
+  assetPath: Assets/PixelArtStudio/SkeletonsPack/Knight/Animations/Walk2/LeftBot/Walk2.anim
+  uploadId: 583703
