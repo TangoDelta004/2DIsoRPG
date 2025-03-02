@@ -3,45 +3,62 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    // Lists to track players
-    public List<GameObject> players = new List<GameObject>();         // All players in the scene
-    public List<GameObject> selectedPlayers = new List<GameObject>(); // Currently selected players
-    public LayerMask playerLayer;            // Layer for player detection
+    // List to track selected players
+    public List<GameObject> selectedPlayers = new List<GameObject>();
 
     // Variables for drag selection
     private Vector3 dragStartPosition;
     private bool isDragging = false;
 
+    // Variables for click-to-move
+    private float clickStartTime;
+    private Vector3 clickStartPosition;
+    private const float clickThresholdTime = 0.2f;   // Time threshold for a click
+    private const float clickThresholdDistance = 5.0f; // Distance threshold for a click
+
+    // Flag to indicate if a player was clicked
+    private bool clickedOnPlayer = false;
+
     // Formation spacing
-    [SerializeField] private float formationSpacing = 1.0f; // Adjust this in the Inspector for formation spread
+    [SerializeField] private float formationSpacing = 1.0f;
 
     void Start()
     {
         // Automatically find and select players tagged "Player"
         GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
         Debug.Log("Found " + playerObjects.Length + " players in the scene.");
-
-        foreach (GameObject player in playerObjects)
-        {
-            // Select up to 4 players initially
-            if (selectedPlayers.Count < 4)
-            {
-                player.GetComponent<SelectablePlayer>().isSelected = true;
-                selectedPlayers.Add(player);
-                Debug.Log("Selected player: " + player.name);
-            }
-            players.Add(player); // Add to full player list
-        }
+        selectedPlayers.AddRange(playerObjects);
     }
 
     void Update()
     {
-        HandlePlayerSelection();
         HandleDragSelection();
-
-        if (Input.GetMouseButtonDown(0)) 
+        
+        if (Input.GetMouseButtonDown(0))
         {
-            HandlePlayerMovement();
+            clickStartTime = Time.time;
+            clickStartPosition = Input.mousePosition;
+            HandlePlayerSelection();
+
+            // Start drag selection
+            dragStartPosition = Input.mousePosition;
+            isDragging = true;
+        }
+        
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            float clickDuration = Time.time - clickStartTime;
+            float clickDistance = Vector3.Distance(clickStartPosition, Input.mousePosition);
+
+            // Detect a click (short duration and small movement)
+            if (clickDuration <= clickThresholdTime && clickDistance <= clickThresholdDistance)
+            {
+                if (!clickedOnPlayer)
+                {
+                    HandlePlayerMovement();
+                }
+            }
         }
     }
 
@@ -49,61 +66,52 @@ public class PlayerManager : MonoBehaviour
     {
         if (isDragging)
         {
-            // Draw the selection rectangle on screen
             Rect rect = GetScreenRect(dragStartPosition, Input.mousePosition);
             DrawScreenRect(rect, new Color(0, 1, 0, 0.25f));
             DrawScreenRectBorder(rect, 2, Color.green);
         }
     }
 
+    void OnDrawGizmos()
+    {
+        foreach (GameObject player in selectedPlayers)
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(player.transform.position, 0.5f);
+        }
+    }
+
     void HandlePlayerSelection()
     {
-        if (Input.GetMouseButtonDown(0))
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+        Collider2D hit = Physics2D.OverlapPoint(mousePos);
+
+        if (hit != null && hit.CompareTag("Player"))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0; // Ensure z-coordinate is zero
-            Collider2D hit = Physics2D.OverlapPoint(mousePos, playerLayer);
+            // Deselect all players
+            selectedPlayers.Clear();
 
-            if (hit != null)
-            {
-                GameObject clickedPlayer = hit.gameObject;
+            // Select the clicked player
+            GameObject clickedPlayer = hit.gameObject;
+            selectedPlayers.Add(clickedPlayer);
+            Debug.Log("Player selected: " + clickedPlayer.name);
 
-                if (selectedPlayers.Contains(clickedPlayer))
-                {
-                    // Deselect the player
-                    clickedPlayer.GetComponent<SelectablePlayer>().isSelected = false;
-                    selectedPlayers.Remove(clickedPlayer);
-                    Debug.Log("Player deselected: " + clickedPlayer.name);
-                }
-                else
-                {
-                    // Select the player
-                    if (selectedPlayers.Count < 4)
-                    {
-                        clickedPlayer.GetComponent<SelectablePlayer>().isSelected = true;
-                        selectedPlayers.Add(clickedPlayer);
-                        Debug.Log("Player selected: " + clickedPlayer.name);
-                    }
-                }
-            }
-            else
-            {
-                // Optionally deselect all players if clicking on empty space
-                // DeselectAllPlayers();
-            }
+            // Indicate that a player was clicked
+            clickedOnPlayer = true;
+        }
+        else
+        {
+            // No player was clicked
+            clickedOnPlayer = false;
         }
     }
 
     void HandleDragSelection()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isDragging)
         {
-            dragStartPosition = Input.mousePosition;
-            isDragging = true;
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            if (isDragging)
+            if (Input.GetMouseButtonUp(0))
             {
                 isDragging = false;
                 SelectPlayersInDrag();
@@ -113,24 +121,35 @@ public class PlayerManager : MonoBehaviour
 
     void SelectPlayersInDrag()
     {
-        Rect selectionRect = GetScreenRect(dragStartPosition, Input.mousePosition);
+        List<GameObject> tempSelectedPlayers = new List<GameObject>(); // Temporary list
 
-        foreach (GameObject player in players)
-        {
-            Vector3 playerScreenPosition = Camera.main.WorldToScreenPoint(player.transform.position);
+        // Assuming characters are tagged as "Player"
+        GameObject[] characters = GameObject.FindGameObjectsWithTag("Player");
 
-            // Invert y-coordinate because ScreenPoint has y increasing from bottom to top
-            playerScreenPosition.y = Screen.height - playerScreenPosition.y;
+        // Get the corners of the selection rectangle in screen coordinates
+        Vector2 startScreenPos = dragStartPosition;    // Screen coordinates when the drag started
+        Vector2 endScreenPos = Input.mousePosition;    // Current screen coordinates
 
-            if (selectionRect.Contains(playerScreenPosition))
-            {
-                if (!selectedPlayers.Contains(player) && selectedPlayers.Count < 4)
-                {
-                    player.GetComponent<SelectablePlayer>().isSelected = true;
-                    selectedPlayers.Add(player);
-                    Debug.Log("Player selected by drag: " + player.name);
-                }
+        // Calculate the rectangle boundaries
+        float minX = Mathf.Min(startScreenPos.x, endScreenPos.x);
+        float maxX = Mathf.Max(startScreenPos.x, endScreenPos.x);
+        float minY = Mathf.Min(startScreenPos.y, endScreenPos.y);
+        float maxY = Mathf.Max(startScreenPos.y, endScreenPos.y);
+
+        foreach (GameObject character in characters) {
+            // Get the screen position of the character
+            Vector3 characterScreenPos = Camera.main.WorldToScreenPoint(character.transform.position);
+
+            // Check if the character is within the selection rectangle
+            if (characterScreenPos.x > minX && characterScreenPos.x < maxX && characterScreenPos.y > minY && characterScreenPos.y < maxY) {
+                // Character is within selection box
+                tempSelectedPlayers.Add(character);
+                Debug.Log("Selected: " + character.name);
             }
+        }
+
+        if (tempSelectedPlayers.Count > 0) {
+            selectedPlayers = tempSelectedPlayers; // Only update if at least one character is selected
         }
     }
 
@@ -139,8 +158,7 @@ public class PlayerManager : MonoBehaviour
         if (selectedPlayers.Count > 0)
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0; // Ensure z-coordinate is zero
-
+            mousePos.z = 0;
             AssignFormationPositions(mousePos);
         }
     }
@@ -194,7 +212,6 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-
     Vector3 CalculateFollowerOffset(int followerIndex, Vector3 direction, Vector3 perpendicular, float spacing)
     {
         // Formation pattern: V-shaped behind the leader
@@ -207,7 +224,7 @@ public class PlayerManager : MonoBehaviour
 
     Rect GetScreenRect(Vector3 start, Vector3 end)
     {
-        // Move origin from bottom-left to top-left
+        // Convert to top-left origin
         start.y = Screen.height - start.y;
         end.y = Screen.height - end.y;
         Vector3 topLeft = Vector3.Min(start, end);
@@ -225,14 +242,11 @@ public class PlayerManager : MonoBehaviour
     void DrawScreenRectBorder(Rect rect, float thickness, Color color)
     {
         GUI.color = color;
-        // Top
-        GUI.DrawTexture(new Rect(rect.xMin, rect.yMin, rect.width, thickness), Texture2D.whiteTexture);
-        // Bottom
-        GUI.DrawTexture(new Rect(rect.xMin, rect.yMax - thickness, rect.width, thickness), Texture2D.whiteTexture);
-        // Left
-        GUI.DrawTexture(new Rect(rect.xMin, rect.yMin, thickness, rect.height), Texture2D.whiteTexture);
-        // Right
-        GUI.DrawTexture(new Rect(rect.xMax - thickness, rect.yMin, thickness, rect.height), Texture2D.whiteTexture);
+        // Draw borders
+        GUI.DrawTexture(new Rect(rect.xMin, rect.yMin, rect.width, thickness), Texture2D.whiteTexture); // Top
+        GUI.DrawTexture(new Rect(rect.xMin, rect.yMax - thickness, rect.width, thickness), Texture2D.whiteTexture); // Bottom
+        GUI.DrawTexture(new Rect(rect.xMin, rect.yMin, thickness, rect.height), Texture2D.whiteTexture); // Left
+        GUI.DrawTexture(new Rect(rect.xMax - thickness, rect.yMin, thickness, rect.height), Texture2D.whiteTexture); // Right
         GUI.color = Color.white;
     }
 }
