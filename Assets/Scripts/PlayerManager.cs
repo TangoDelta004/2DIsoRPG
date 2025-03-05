@@ -32,6 +32,9 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
+        // Clean up the selectedPlayers list by removing any null or missing players
+        selectedPlayers.RemoveAll(player => player == null);
+
         HandleDragSelection();
         
         if (Input.GetMouseButtonDown(0))
@@ -76,8 +79,11 @@ public class PlayerManager : MonoBehaviour
     {
         foreach (GameObject player in selectedPlayers)
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(player.transform.position, 0.5f);
+            if (player != null)
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawWireSphere(player.transform.position, 0.5f);
+            }
         }
     }
 

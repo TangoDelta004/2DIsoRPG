@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 533628550}
   - component: {fileID: 533628548}
   - component: {fileID: 533628555}
+  - component: {fileID: 533628556}
   m_Layer: 0
   m_Name: Player (2)
   m_TagString: Player
@@ -768,7 +769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9119d5cbe91e351478aa4ed253c9e243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
   selectedPlayers: []
   formationSpacing: 0.5
 --- !u!114 &533628550
@@ -921,6 +921,41 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &533628556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533628547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73982161c3ab24ab183264884973b823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+--- !u!1 &637277165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 692510796443582357, guid: 90e4a9dafd483a94a9e3381957f9a627, type: 3}
+  m_PrefabInstance: {fileID: 1486640204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &637277170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637277165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf92c1e6a8d844cd916645a287a3111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 5
+  meleeRange: 1
+  moveSpeed: 2
+  attackDamage: 20
+  attackCooldown: 2
 --- !u!1 &673837148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1057,7 @@ GameObject:
   - component: {fileID: 781402822}
   - component: {fileID: 781402820}
   - component: {fileID: 781402827}
+  - component: {fileID: 781402828}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -1041,7 +1077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9119d5cbe91e351478aa4ed253c9e243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
   selectedPlayers: []
   formationSpacing: 0.5
 --- !u!114 &781402822
@@ -1194,6 +1229,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &781402828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781402819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73982161c3ab24ab183264884973b823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &824604429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1627,7 @@ GameObject:
   - component: {fileID: 1083716896}
   - component: {fileID: 1083716898}
   - component: {fileID: 1083716899}
+  - component: {fileID: 1083716900}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1712,7 +1761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9119d5cbe91e351478aa4ed253c9e243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
   selectedPlayers: []
   formationSpacing: 0.5
 --- !u!58 &1083716899
@@ -1751,6 +1799,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1083716900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083716890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73982161c3ab24ab183264884973b823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1183429790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1913,7 @@ GameObject:
   - component: {fileID: 1197131550}
   - component: {fileID: 1197131548}
   - component: {fileID: 1197131555}
+  - component: {fileID: 1197131556}
   m_Layer: 0
   m_Name: Player (3)
   m_TagString: Player
@@ -1871,7 +1933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9119d5cbe91e351478aa4ed253c9e243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
   selectedPlayers: []
   formationSpacing: 0.5
 --- !u!114 &1197131550
@@ -2024,6 +2085,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &1197131556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197131547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73982161c3ab24ab183264884973b823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1360754462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +2327,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 692510796443582357, guid: 90e4a9dafd483a94a9e3381957f9a627, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 637277170}
   m_SourcePrefab: {fileID: 100100000, guid: 90e4a9dafd483a94a9e3381957f9a627, type: 3}
 --- !u!1 &1488778316
 GameObject:
